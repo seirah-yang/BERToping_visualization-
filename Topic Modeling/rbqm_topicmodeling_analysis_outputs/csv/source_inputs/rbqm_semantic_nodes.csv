@@ -1,0 +1,37 @@
+﻿node,category,layer,type,doc_frequency,mention_frequency,first_year,last_year,doc_share,degree_strength,degree_centrality,betweenness_centrality,eigenvector_centrality,community
+clinical_trial,Clinical_Operations,Operational,Clinical Trial,14,43,2011,2025,1.0,49.0,1.0,0.6305555555555555,0.5599106324350274,0.0
+data_integrity,Data,Governance,Data Integrity,10,11,2011,2025,0.7142857142857143,41.0,0.875,0.1638888888888889,0.5187999302390663,1.0
+quality_assurance,RBQM,Operational,Quality Assurance,6,13,2011,2025,0.42857142857142855,19.0,0.375,0.0,0.34185060951830504,1.0
+oversight,Clinical_Operations,Governance,Oversight,6,9,2011,2022,0.42857142857142855,20.0,0.4375,0.013888888888888888,0.3255112429468978,2.0
+risk_based_monitoring,Monitoring,Operational,RBM,3,6,2023,2025,0.21428571428571427,5.0,0.125,0.0,0.12307802776747587,0.0
+machine_learning,AI,Analytic,ML,2,9,2019,2025,0.14285714285714285,4.0,0.125,0.0,0.09771747196697188,0.0
+clinical_study,Clinical_Operations,Operational,Clinical Study,2,7,2017,2019,0.14285714285714285,8.0,0.25,0.0,0.13987541244059523,2.0
+statistical_modeling,Statistics,Analytic,Statistical Modeling,2,6,2020,2022,0.14285714285714285,10.0,0.3125,0.0,0.15715756232659941,1.0
+data_quality,Data,Quality,Data Quality,2,5,2011,2023,0.14285714285714285,2.0,0.0625,0.0,0.05072111160100799,0.0
+clinical_quality_assurance,RBQM,Operational,Clinical QA,2,4,2019,2020,0.14285714285714285,4.0,0.125,0.0,0.09771747196697188,0.0
+quality_risk_assessment,Risk,Governance,Quality Risk Assessment,2,4,2020,2022,0.14285714285714285,10.0,0.3125,0.0,0.15715756232659941,1.0
+adverse_event_reporting,Data,Safety,AE Reporting,2,3,2011,2019,0.14285714285714285,6.0,0.1875,0.0,0.12720450292942287,2.0
+clinical_research,Clinical_Operations,Operational,Clinical Research,2,3,2017,2021,0.14285714285714285,6.0,0.1875,0.0,0.12720450292942287,2.0
+governance,Governance,Governance,Governance,2,3,2016,2023,0.14285714285714285,2.0,0.0625,0.0,0.05072111160100799,0.0
+regulatory_guideline,Governance,Governance,Guideline,2,3,2017,2019,0.14285714285714285,8.0,0.25,0.0,0.13987541244059523,2.0
+interpretability,AI,Governance,Interpretability,2,2,2020,2022,0.14285714285714285,10.0,0.3125,0.0,0.15715756232659941,1.0
+site_monitoring,Monitoring,Operational,Site Monitoring,2,2,2021,2025,0.14285714285714285,4.0,0.125,0.0,0.09771747196697188,0.0
+quality_tolerance_limit,Risk,Governance,QTL,1,10,2025,2025,0.07142857142857142,,,,,
+quality_by_design,RBQM,Design,QbD,1,8,2025,2025,0.07142857142857142,,,,,
+backup_recovery,Data,Resilience,Backup/Recovery,1,4,2022,2022,0.07142857142857142,,,,,
+central_statistical_monitoring,Monitoring,Analytic,CSM,1,3,2024,2024,0.07142857142857142,,,,,
+adverse_event_underreporting,Data,Safety,AE Under-reporting,1,2,2019,2019,0.07142857142857142,,,,,
+computerized_systems_validation,Governance,Governance,CSV,1,2,2023,2023,0.07142857142857142,,,,,
+critical_to_quality,RBQM,Design,CTQ,1,2,2023,2023,0.07142857142857142,,,,,
+remote_auditing,Monitoring,Audit,Remote Auditing,1,2,2022,2022,0.07142857142857142,,,,,
+source_data_verification,Monitoring,Operational,SDV,1,2,2025,2025,0.07142857142857142,,,,,
+accountability,Governance,Governance,Accountability,1,1,2016,2016,0.07142857142857142,,,,,
+centralized_monitoring,Monitoring,Operational,Central Monitoring,1,1,2016,2016,0.07142857142857142,,,,,
+computerized_system,Data,System,Computerized System,1,1,2023,2023,0.07142857142857142,,,,,
+corrective_preventive_action,Governance,Operational,CAPA,1,1,2011,2011,0.07142857142857142,,,,,
+governance_traceability,Governance,Governance,Traceability,1,1,2025,2025,0.07142857142857142,,,,,
+outlier_detection,AI,Analytic,Outlier Detection,1,1,2024,2024,0.07142857142857142,,,,,
+predictive_modeling,AI,Analytic,Predictive Modeling,1,1,2019,2019,0.07142857142857142,,,,,
+roles_responsibilities,Governance,Governance,Roles and Responsibilities,1,1,2011,2011,0.07142857142857142,,,,,
+sponsor_oversight,Governance,Governance,Sponsor Oversight,1,1,2020,2020,0.07142857142857142,,,,,
+technical_support,Data,Operational,Technical Support,1,1,2022,2022,0.07142857142857142,,,,,

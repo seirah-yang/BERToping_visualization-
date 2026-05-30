@@ -1,0 +1,101 @@
+﻿table,column,dtype,non_null,missing,example
+topic_info,Topic,int64,4,0,0
+topic_info,Count,int64,4,0,4
+topic_info,Name,object,4,0,0_clinical_trial_quality_research_data
+topic_info,Representation,object,4,0,"['clinical_trial', 'quality', 'research', 'data', 'quality_by_design', 'safety', 'veterinary', 'blockchain', 'regulated', 'clinical_study']"
+topic_info,Representative_Docs,object,4,0,['blockchain enabled quality_by_design system clinical_trial blockchain enabled quality_by_design system clinical_trial introduction blockchain technology offer
+document_node_membership,doc_uid,int64,82,0,22145122
+document_node_membership,pmid,int64,82,0,22145122
+document_node_membership,title,object,82,0,Quality of clinical trials: A moving target.
+document_node_membership,year,int64,82,0,2011
+document_node_membership,period,object,82,0,Pre-COVID
+document_node_membership,time_block,object,82,0,Before 2015
+document_node_membership,topic,int64,82,0,0
+document_node_membership,node,object,82,0,clinical_trial
+document_node_membership,mention_count,int64,82,0,7
+document_node_membership,category,object,82,0,Clinical_Operations
+document_node_membership,layer,object,82,0,Operational
+document_node_membership,type,object,82,0,Clinical Trial
+documents,pmid,int64,14,0,22145122
+documents,pmcid,object,12,2,PMC3227329
+documents,title,object,14,0,Quality of clinical trials: A moving target.
+documents,abstract,object,14,0,"Quality of clinical trials depends on data integrity and subject protection. Globalization, outsourcing and increasing complexicity of clinical trials have made"
+documents,year,int64,14,0,2011
+documents,period,object,14,0,Pre-COVID
+documents,time_block,object,14,0,Before 2015
+documents,has_fulltext,bool,14,0,False
+documents,available_sections,object,14,0,abstract
+documents,n_sections,int64,14,0,1
+documents,combined_text,object,14,0,Quality of clinical trials: A moving target. Quality of clinical trials: A moving target. ABSTRACT: Quality of clinical trials depends on data integrity and sub
+documents,doc_uid,int64,14,0,22145122
+documents,doc_raw,object,14,0,Quality of clinical trials: A moving target. Quality of clinical trials: A moving target. ABSTRACT: Quality of clinical trials depends on data integrity and sub
+documents,doc_processed,object,14,0,quality clinical_trial moving target quality clinical_trial moving target quality clinical_trial depends data_integrity subject protection globalization outsour
+documents,semantic_nodes,object,14,0,clinical_trial; adverse_event_reporting; corrective_preventive_action; data_integrity; data_quality; oversight; quality_assurance; roles_responsibilities
+documents,topic,int64,14,0,0
+documents,topic_probability,float64,0,14,
+edge_temporal,time_block,object,201,0,2015-2019
+edge_temporal,source,object,201,0,accountability
+edge_temporal,target,object,201,0,centralized_monitoring
+edge_temporal,n_docs,int64,201,0,1
+edge_temporal,block_docs,int64,201,0,4
+edge_temporal,doc_share,float64,201,0,0.25
+node_growth,node,object,36,0,risk_based_monitoring
+node_growth,Before 2015,float64,36,0,0.0
+node_growth,2015-2019,float64,36,0,0.0
+node_growth,2020-2023,float64,36,0,0.1666666666666666
+node_growth,2024-current,float64,36,0,0.6666666666666666
+node_growth,Unknown,float64,36,0,0.0
+node_growth,growth_2024_vs_2015_2019,float64,36,0,0.6666666666666666
+node_growth,growth_2024_vs_2020_2023,float64,36,0,0.5
+node_growth,post_vs_pre_covid,float64,36,0,0.4166666666666666
+node_growth,category,object,36,0,Monitoring
+node_growth,layer,object,36,0,Operational
+node_growth,type,object,36,0,RBM
+node_growth,doc_frequency,int64,36,0,3
+node_temporal,time_block,object,55,0,2015-2019
+node_temporal,node,object,55,0,accountability
+node_temporal,category,object,55,0,Governance
+node_temporal,n_docs,int64,55,0,1
+node_temporal,mentions,int64,55,0,1
+node_temporal,block_docs,int64,55,0,4
+node_temporal,doc_share,float64,55,0,0.25
+node_temporal,docs_per_100,float64,55,0,25.0
+semantic_edges,source,object,41,0,clinical_trial
+semantic_edges,target,object,41,0,data_integrity
+semantic_edges,weight,int64,41,0,10
+semantic_edges,first_year,int64,41,0,2011
+semantic_edges,last_year,int64,41,0,2025
+semantic_edges,source_category,object,41,0,Clinical_Operations
+semantic_edges,target_category,object,41,0,Data
+semantic_nodes,node,object,36,0,clinical_trial
+semantic_nodes,category,object,36,0,Clinical_Operations
+semantic_nodes,layer,object,36,0,Operational
+semantic_nodes,type,object,36,0,Clinical Trial
+semantic_nodes,doc_frequency,int64,36,0,14
+semantic_nodes,mention_frequency,int64,36,0,43
+semantic_nodes,first_year,int64,36,0,2011
+semantic_nodes,last_year,int64,36,0,2025
+semantic_nodes,doc_share,float64,36,0,1.0
+semantic_nodes,degree_strength,float64,17,19,49.0
+semantic_nodes,degree_centrality,float64,17,19,1.0
+semantic_nodes,betweenness_centrality,float64,17,19,0.6305555555555555
+semantic_nodes,eigenvector_centrality,float64,17,19,0.5599106324350274
+semantic_nodes,community,float64,17,19,0.0
+topic_interpretation,topic,int64,4,0,0
+topic_interpretation,n_docs,int64,4,0,4
+topic_interpretation,share,float64,4,0,0.2857142857142857
+topic_interpretation,semantic_label,object,4,0,clinical_trial + data_integrity + oversight
+topic_interpretation,topic_words,object,4,0,clinical_trial; quality; research; data; quality_by_design; safety; veterinary; blockchain; regulated; clinical_study
+topic_interpretation,top_nodes,object,4,0,clinical_trial; data_integrity; oversight; quality_assurance; clinical_research; adverse_event_reporting; corrective_preventive_action; data_quality
+topic_interpretation,top_categories,object,4,0,Clinical_Operations; Data; Governance; RBQM
+topic_interpretation,year_min,int64,4,0,2011
+topic_interpretation,year_max,int64,4,0,2025
+topic_interpretation,example_titles,object,4,0,Blockchain-enabled quality by design system for clinical trials. | Institutionally chartered Data and Safety Monitoring Boards: structured approaches to assurin
+topic_temporal,time_block,object,10,0,2015-2019
+topic_temporal,topic,int64,10,0,0
+topic_temporal,n_docs,int64,10,0,1
+topic_temporal,block_docs,int64,10,0,4
+topic_temporal,doc_share,float64,10,0,0.25
+vosviewer,from,object,41,0,clinical_trial
+vosviewer,to,object,41,0,data_integrity
+vosviewer,strength,int64,41,0,10

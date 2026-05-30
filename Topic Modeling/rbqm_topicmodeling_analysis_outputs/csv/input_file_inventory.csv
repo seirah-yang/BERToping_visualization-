@@ -1,0 +1,12 @@
+﻿table_key,file_name,rows,columns,file_size_bytes,columns_list
+topic_info,rbqm_bertopic_topic_info.csv,4,5,18695,Topic; Count; Name; Representation; Representative_Docs
+document_node_membership,rbqm_document_node_membership.csv,82,12,17575,doc_uid; pmid; title; year; period; time_block; topic; node; mention_count; category; layer; type
+documents,rbqm_documents_with_topics.csv,14,17,107708,pmid; pmcid; title; abstract; year; period; time_block; has_fulltext; available_sections; n_sections; combined_text; doc_uid; doc_raw; doc_processed; semantic_nodes; topic; topic_probability
+edge_temporal,rbqm_edge_temporal_evolution.csv,201,6,13177,time_block; source; target; n_docs; block_docs; doc_share
+node_growth,rbqm_node_growth_summary.csv,36,13,4669,node; Before 2015; 2015-2019; 2020-2023; 2024-current; Unknown; growth_2024_vs_2015_2019; growth_2024_vs_2020_2023; post_vs_pre_covid; category; layer; type; doc_frequency
+node_temporal,rbqm_node_temporal_evolution.csv,55,8,3927,time_block; node; category; n_docs; mentions; block_docs; doc_share; docs_per_100
+semantic_edges,rbqm_semantic_edges.csv,41,7,2938,source; target; weight; first_year; last_year; source_category; target_category
+semantic_nodes,rbqm_semantic_nodes.csv,36,14,4124,node; category; layer; type; doc_frequency; mention_frequency; first_year; last_year; doc_share; degree_strength; degree_centrality; betweenness_centrality; eigenvector_centrality; community
+topic_interpretation,rbqm_topic_interpretation.csv,4,10,2997,topic; n_docs; share; semantic_label; topic_words; top_nodes; top_categories; year_min; year_max; example_titles
+topic_temporal,rbqm_topic_temporal_evolution.csv,10,5,361,time_block; topic; n_docs; block_docs; doc_share
+vosviewer,vosviewer_cooccurrence.csv,41,3,1541,from; to; strength

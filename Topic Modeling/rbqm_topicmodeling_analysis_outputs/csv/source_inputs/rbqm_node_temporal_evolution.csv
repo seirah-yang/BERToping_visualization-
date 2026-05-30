@@ -1,0 +1,56 @@
+﻿time_block,node,category,n_docs,mentions,block_docs,doc_share,docs_per_100
+2015-2019,accountability,Governance,1,1,4,0.25,25.0
+2015-2019,adverse_event_reporting,Data,1,2,4,0.25,25.0
+2015-2019,adverse_event_underreporting,Data,1,2,4,0.25,25.0
+2015-2019,centralized_monitoring,Monitoring,1,1,4,0.25,25.0
+2015-2019,clinical_quality_assurance,RBQM,1,3,4,0.25,25.0
+2015-2019,clinical_research,Clinical_Operations,1,1,4,0.25,25.0
+2015-2019,clinical_study,Clinical_Operations,2,7,4,0.5,50.0
+2015-2019,clinical_trial,Clinical_Operations,4,11,4,1.0,100.0
+2015-2019,data_integrity,Data,3,3,4,0.75,75.0
+2015-2019,governance,Governance,1,1,4,0.25,25.0
+2015-2019,machine_learning,AI,1,4,4,0.25,25.0
+2015-2019,oversight,Clinical_Operations,2,2,4,0.5,50.0
+2015-2019,predictive_modeling,AI,1,1,4,0.25,25.0
+2015-2019,quality_assurance,RBQM,2,6,4,0.5,50.0
+2015-2019,regulatory_guideline,Governance,2,3,4,0.5,50.0
+2020-2023,backup_recovery,Data,1,4,6,0.16666666666666666,16.666666666666664
+2020-2023,clinical_quality_assurance,RBQM,1,1,6,0.16666666666666666,16.666666666666664
+2020-2023,clinical_research,Clinical_Operations,1,2,6,0.16666666666666666,16.666666666666664
+2020-2023,clinical_trial,Clinical_Operations,6,15,6,1.0,100.0
+2020-2023,computerized_system,Data,1,1,6,0.16666666666666666,16.666666666666664
+2020-2023,computerized_systems_validation,Governance,1,2,6,0.16666666666666666,16.666666666666664
+2020-2023,critical_to_quality,RBQM,1,2,6,0.16666666666666666,16.666666666666664
+2020-2023,data_integrity,Data,3,4,6,0.5,50.0
+2020-2023,data_quality,Data,1,4,6,0.16666666666666666,16.666666666666664
+2020-2023,governance,Governance,1,2,6,0.16666666666666666,16.666666666666664
+2020-2023,interpretability,AI,2,2,6,0.3333333333333333,33.33333333333333
+2020-2023,oversight,Clinical_Operations,3,6,6,0.5,50.0
+2020-2023,quality_assurance,RBQM,2,4,6,0.3333333333333333,33.33333333333333
+2020-2023,quality_risk_assessment,Risk,2,4,6,0.3333333333333333,33.33333333333333
+2020-2023,remote_auditing,Monitoring,1,2,6,0.16666666666666666,16.666666666666664
+2020-2023,risk_based_monitoring,Monitoring,1,1,6,0.16666666666666666,16.666666666666664
+2020-2023,site_monitoring,Monitoring,1,1,6,0.16666666666666666,16.666666666666664
+2020-2023,sponsor_oversight,Governance,1,1,6,0.16666666666666666,16.666666666666664
+2020-2023,statistical_modeling,Statistics,2,6,6,0.3333333333333333,33.33333333333333
+2020-2023,technical_support,Data,1,1,6,0.16666666666666666,16.666666666666664
+2024-current,central_statistical_monitoring,Monitoring,1,3,3,0.3333333333333333,33.33333333333333
+2024-current,clinical_trial,Clinical_Operations,3,10,3,1.0,100.0
+2024-current,data_integrity,Data,3,3,3,1.0,100.0
+2024-current,governance_traceability,Governance,1,1,3,0.3333333333333333,33.33333333333333
+2024-current,machine_learning,AI,1,5,3,0.3333333333333333,33.33333333333333
+2024-current,outlier_detection,AI,1,1,3,0.3333333333333333,33.33333333333333
+2024-current,quality_assurance,RBQM,1,2,3,0.3333333333333333,33.33333333333333
+2024-current,quality_by_design,RBQM,1,8,3,0.3333333333333333,33.33333333333333
+2024-current,quality_tolerance_limit,Risk,1,10,3,0.3333333333333333,33.33333333333333
+2024-current,risk_based_monitoring,Monitoring,2,5,3,0.6666666666666666,66.66666666666666
+2024-current,site_monitoring,Monitoring,1,1,3,0.3333333333333333,33.33333333333333
+2024-current,source_data_verification,Monitoring,1,2,3,0.3333333333333333,33.33333333333333
+Before 2015,adverse_event_reporting,Data,1,1,1,1.0,100.0
+Before 2015,clinical_trial,Clinical_Operations,1,7,1,1.0,100.0
+Before 2015,corrective_preventive_action,Governance,1,1,1,1.0,100.0
+Before 2015,data_integrity,Data,1,1,1,1.0,100.0
+Before 2015,data_quality,Data,1,1,1,1.0,100.0
+Before 2015,oversight,Clinical_Operations,1,1,1,1.0,100.0
+Before 2015,quality_assurance,RBQM,1,1,1,1.0,100.0
+Before 2015,roles_responsibilities,Governance,1,1,1,1.0,100.0

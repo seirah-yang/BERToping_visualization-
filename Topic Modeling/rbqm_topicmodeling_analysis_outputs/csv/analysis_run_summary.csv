@@ -1,0 +1,16 @@
+﻿metric,value
+documents_total,14
+documents_pre_covid,5
+documents_post_covid,9
+node_gap_rows,36
+node_gap_new_post_covid,18
+node_gap_large_upward_shift,0
+edge_gap_rows,172
+edge_gap_new_post_covid,88
+edge_gap_large_upward_shift,0
+topic_gap_rows,4
+topic_gap_new_post_covid,1
+topic_gap_large_upward_shift,0
+category_gap_rows,8
+category_gap_new_post_covid,2
+category_gap_large_upward_shift,1

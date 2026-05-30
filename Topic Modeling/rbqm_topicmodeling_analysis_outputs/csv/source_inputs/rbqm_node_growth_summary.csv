@@ -1,0 +1,37 @@
+﻿node,Before 2015,2015-2019,2020-2023,2024-current,Unknown,growth_2024_vs_2015_2019,growth_2024_vs_2020_2023,post_vs_pre_covid,category,layer,type,doc_frequency
+risk_based_monitoring,0.0,0.0,0.16666666666666666,0.6666666666666666,0.0,0.6666666666666666,0.5,0.41666666666666663,Monitoring,Operational,RBM,3
+governance_traceability,0.0,0.0,0.0,0.3333333333333333,0.0,0.3333333333333333,0.3333333333333333,0.16666666666666666,Governance,Governance,Traceability,1
+central_statistical_monitoring,0.0,0.0,0.0,0.3333333333333333,0.0,0.3333333333333333,0.3333333333333333,0.16666666666666666,Monitoring,Analytic,CSM,1
+source_data_verification,0.0,0.0,0.0,0.3333333333333333,0.0,0.3333333333333333,0.3333333333333333,0.16666666666666666,Monitoring,Operational,SDV,1
+site_monitoring,0.0,0.0,0.16666666666666666,0.3333333333333333,0.0,0.3333333333333333,0.16666666666666666,0.25,Monitoring,Operational,Site Monitoring,2
+quality_tolerance_limit,0.0,0.0,0.0,0.3333333333333333,0.0,0.3333333333333333,0.3333333333333333,0.16666666666666666,Risk,Governance,QTL,1
+quality_by_design,0.0,0.0,0.0,0.3333333333333333,0.0,0.3333333333333333,0.3333333333333333,0.16666666666666666,RBQM,Design,QbD,1
+outlier_detection,0.0,0.0,0.0,0.3333333333333333,0.0,0.3333333333333333,0.3333333333333333,0.16666666666666666,AI,Analytic,Outlier Detection,1
+data_integrity,1.0,0.75,0.5,1.0,0.0,0.25,0.5,0.0,Data,Governance,Data Integrity,10
+machine_learning,0.0,0.25,0.0,0.3333333333333333,0.0,0.08333333333333331,0.3333333333333333,-0.08333333333333334,AI,Analytic,ML,2
+interpretability,0.0,0.0,0.3333333333333333,0.0,0.0,0.0,-0.3333333333333333,0.16666666666666666,AI,Governance,Interpretability,2
+statistical_modeling,0.0,0.0,0.3333333333333333,0.0,0.0,0.0,-0.3333333333333333,0.16666666666666666,Statistics,Analytic,Statistical Modeling,2
+sponsor_oversight,0.0,0.0,0.16666666666666666,0.0,0.0,0.0,-0.16666666666666666,0.08333333333333333,Governance,Governance,Sponsor Oversight,1
+roles_responsibilities,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Governance,Governance,Roles and Responsibilities,1
+remote_auditing,0.0,0.0,0.16666666666666666,0.0,0.0,0.0,-0.16666666666666666,0.08333333333333333,Monitoring,Audit,Remote Auditing,1
+quality_risk_assessment,0.0,0.0,0.3333333333333333,0.0,0.0,0.0,-0.3333333333333333,0.16666666666666666,Risk,Governance,Quality Risk Assessment,2
+technical_support,0.0,0.0,0.16666666666666666,0.0,0.0,0.0,-0.16666666666666666,0.08333333333333333,Data,Operational,Technical Support,1
+computerized_system,0.0,0.0,0.16666666666666666,0.0,0.0,0.0,-0.16666666666666666,0.08333333333333333,Data,System,Computerized System,1
+data_quality,1.0,0.0,0.16666666666666666,0.0,0.0,0.0,-0.16666666666666666,0.08333333333333333,Data,Quality,Data Quality,2
+critical_to_quality,0.0,0.0,0.16666666666666666,0.0,0.0,0.0,-0.16666666666666666,0.08333333333333333,RBQM,Design,CTQ,1
+backup_recovery,0.0,0.0,0.16666666666666666,0.0,0.0,0.0,-0.16666666666666666,0.08333333333333333,Data,Resilience,Backup/Recovery,1
+corrective_preventive_action,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Governance,Operational,CAPA,1
+computerized_systems_validation,0.0,0.0,0.16666666666666666,0.0,0.0,0.0,-0.16666666666666666,0.08333333333333333,Governance,Governance,CSV,1
+clinical_trial,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,Clinical_Operations,Operational,Clinical Trial,14
+quality_assurance,1.0,0.5,0.3333333333333333,0.3333333333333333,0.0,-0.16666666666666669,0.0,-0.16666666666666669,RBQM,Operational,Quality Assurance,6
+clinical_research,0.0,0.25,0.16666666666666666,0.0,0.0,-0.25,-0.16666666666666666,-0.16666666666666669,Clinical_Operations,Operational,Clinical Research,2
+adverse_event_underreporting,0.0,0.25,0.0,0.0,0.0,-0.25,0.0,-0.25,Data,Safety,AE Under-reporting,1
+centralized_monitoring,0.0,0.25,0.0,0.0,0.0,-0.25,0.0,-0.25,Monitoring,Operational,Central Monitoring,1
+clinical_quality_assurance,0.0,0.25,0.16666666666666666,0.0,0.0,-0.25,-0.16666666666666666,-0.16666666666666669,RBQM,Operational,Clinical QA,2
+governance,0.0,0.25,0.16666666666666666,0.0,0.0,-0.25,-0.16666666666666666,-0.16666666666666669,Governance,Governance,Governance,2
+adverse_event_reporting,1.0,0.25,0.0,0.0,0.0,-0.25,0.0,-0.25,Data,Safety,AE Reporting,2
+predictive_modeling,0.0,0.25,0.0,0.0,0.0,-0.25,0.0,-0.25,AI,Analytic,Predictive Modeling,1
+accountability,0.0,0.25,0.0,0.0,0.0,-0.25,0.0,-0.25,Governance,Governance,Accountability,1
+clinical_study,0.0,0.5,0.0,0.0,0.0,-0.5,0.0,-0.5,Clinical_Operations,Operational,Clinical Study,2
+regulatory_guideline,0.0,0.5,0.0,0.0,0.0,-0.5,0.0,-0.5,Governance,Governance,Guideline,2
+oversight,1.0,0.5,0.5,0.0,0.0,-0.5,-0.5,-0.25,Clinical_Operations,Governance,Oversight,6

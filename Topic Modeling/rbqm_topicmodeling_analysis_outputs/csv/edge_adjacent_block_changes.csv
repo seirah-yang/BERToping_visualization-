@@ -1,0 +1,517 @@
+﻿source,target,earlier_block,later_block,earlier_n_docs,later_n_docs,earlier_total_docs,later_total_docs,earlier_share,later_share,share_delta,share_delta_abs,new_in_later_block,disappeared_in_later_block,p_value_fisher,q_value,exploratory_signal
+adverse_event_reporting,corrective_preventive_action,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+adverse_event_reporting,data_quality,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+adverse_event_reporting,quality_assurance,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+adverse_event_reporting,roles_responsibilities,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+clinical_trial,corrective_preventive_action,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+clinical_trial,data_quality,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+clinical_trial,roles_responsibilities,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+corrective_preventive_action,data_integrity,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+corrective_preventive_action,data_quality,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+corrective_preventive_action,oversight,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+corrective_preventive_action,quality_assurance,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+corrective_preventive_action,roles_responsibilities,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+data_integrity,data_quality,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+data_integrity,roles_responsibilities,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+data_quality,oversight,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+data_quality,quality_assurance,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+data_quality,roles_responsibilities,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+oversight,roles_responsibilities,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+quality_assurance,roles_responsibilities,Before 2015,2015-2019,1,0,1,4,1.0,0.0,-1.0,1.0,False,True,0.20000000000000004,1.0,True
+adverse_event_reporting,clinical_trial,Before 2015,2015-2019,1,1,1,4,1.0,0.25,-0.75,0.75,False,False,0.4000000000000001,1.0,True
+adverse_event_reporting,data_integrity,Before 2015,2015-2019,1,1,1,4,1.0,0.25,-0.75,0.75,False,False,0.4000000000000001,1.0,True
+adverse_event_reporting,oversight,Before 2015,2015-2019,1,1,1,4,1.0,0.25,-0.75,0.75,False,False,0.4000000000000001,1.0,True
+data_integrity,quality_assurance,Before 2015,2015-2019,1,1,1,4,1.0,0.25,-0.75,0.75,False,False,0.4000000000000001,1.0,True
+oversight,quality_assurance,Before 2015,2015-2019,1,1,1,4,1.0,0.25,-0.75,0.75,False,False,0.4000000000000001,1.0,True
+data_integrity,risk_based_monitoring,2020-2023,2024-current,0,2,6,3,0.0,0.6666666666666666,0.6666666666666666,0.6666666666666666,True,False,0.08333333333333334,1.0,True
+clinical_study,clinical_trial,Before 2015,2015-2019,0,2,1,4,0.0,0.5,0.5,0.5,True,False,1.0,1.0,True
+clinical_study,clinical_trial,2015-2019,2020-2023,2,0,4,6,0.5,0.0,-0.5,0.5,False,True,0.13333333333333333,1.0,True
+clinical_study,data_integrity,Before 2015,2015-2019,0,2,1,4,0.0,0.5,0.5,0.5,True,False,1.0,1.0,True
+clinical_study,data_integrity,2015-2019,2020-2023,2,0,4,6,0.5,0.0,-0.5,0.5,False,True,0.13333333333333333,1.0,True
+clinical_study,oversight,Before 2015,2015-2019,0,2,1,4,0.0,0.5,0.5,0.5,True,False,1.0,1.0,True
+clinical_study,oversight,2015-2019,2020-2023,2,0,4,6,0.5,0.0,-0.5,0.5,False,True,0.13333333333333333,1.0,True
+clinical_study,regulatory_guideline,Before 2015,2015-2019,0,2,1,4,0.0,0.5,0.5,0.5,True,False,1.0,1.0,True
+clinical_study,regulatory_guideline,2015-2019,2020-2023,2,0,4,6,0.5,0.0,-0.5,0.5,False,True,0.13333333333333333,1.0,True
+clinical_trial,data_integrity,2020-2023,2024-current,3,3,6,3,0.5,1.0,0.5,0.5,False,False,0.4642857142857142,1.0,True
+clinical_trial,oversight,Before 2015,2015-2019,1,2,1,4,1.0,0.5,-0.5,0.5,False,False,1.0,1.0,True
+clinical_trial,oversight,2020-2023,2024-current,3,0,6,3,0.5,0.0,-0.5,0.5,False,True,0.46428571428571436,1.0,True
+clinical_trial,quality_assurance,Before 2015,2015-2019,1,2,1,4,1.0,0.5,-0.5,0.5,False,False,1.0,1.0,True
+clinical_trial,regulatory_guideline,Before 2015,2015-2019,0,2,1,4,0.0,0.5,0.5,0.5,True,False,1.0,1.0,True
+clinical_trial,regulatory_guideline,2015-2019,2020-2023,2,0,4,6,0.5,0.0,-0.5,0.5,False,True,0.13333333333333333,1.0,True
+clinical_trial,risk_based_monitoring,2020-2023,2024-current,1,2,6,3,0.16666666666666666,0.6666666666666666,0.5,0.5,False,False,0.22619047619047622,1.0,True
+data_integrity,oversight,Before 2015,2015-2019,1,2,1,4,1.0,0.5,-0.5,0.5,False,False,1.0,1.0,True
+data_integrity,regulatory_guideline,Before 2015,2015-2019,0,2,1,4,0.0,0.5,0.5,0.5,True,False,1.0,1.0,True
+data_integrity,regulatory_guideline,2015-2019,2020-2023,2,0,4,6,0.5,0.0,-0.5,0.5,False,True,0.13333333333333333,1.0,True
+oversight,regulatory_guideline,Before 2015,2015-2019,0,2,1,4,0.0,0.5,0.5,0.5,True,False,1.0,1.0,True
+oversight,regulatory_guideline,2015-2019,2020-2023,2,0,4,6,0.5,0.0,-0.5,0.5,False,True,0.13333333333333333,1.0,True
+data_integrity,oversight,2015-2019,2020-2023,2,1,4,6,0.5,0.16666666666666666,-0.33333333333333337,0.33333333333333337,False,False,0.5,1.0,True
+central_statistical_monitoring,clinical_trial,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+central_statistical_monitoring,data_integrity,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+central_statistical_monitoring,outlier_detection,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+central_statistical_monitoring,risk_based_monitoring,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+clinical_trial,governance_traceability,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+clinical_trial,interpretability,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+clinical_trial,interpretability,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+clinical_trial,machine_learning,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+clinical_trial,outlier_detection,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+clinical_trial,quality_by_design,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+clinical_trial,quality_risk_assessment,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+clinical_trial,quality_risk_assessment,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+clinical_trial,quality_tolerance_limit,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+clinical_trial,source_data_verification,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+clinical_trial,statistical_modeling,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+clinical_trial,statistical_modeling,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+data_integrity,governance_traceability,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+data_integrity,interpretability,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+data_integrity,interpretability,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+data_integrity,machine_learning,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+data_integrity,outlier_detection,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+data_integrity,quality_by_design,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+data_integrity,quality_risk_assessment,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+data_integrity,quality_risk_assessment,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+data_integrity,quality_tolerance_limit,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+data_integrity,source_data_verification,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+data_integrity,statistical_modeling,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+data_integrity,statistical_modeling,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+governance_traceability,quality_by_design,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+interpretability,quality_assurance,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+interpretability,quality_assurance,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+interpretability,quality_risk_assessment,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+interpretability,quality_risk_assessment,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+interpretability,statistical_modeling,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+interpretability,statistical_modeling,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+machine_learning,quality_assurance,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+machine_learning,quality_tolerance_limit,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+machine_learning,risk_based_monitoring,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+machine_learning,site_monitoring,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+machine_learning,source_data_verification,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+outlier_detection,risk_based_monitoring,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+quality_assurance,quality_risk_assessment,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+quality_assurance,quality_risk_assessment,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+quality_assurance,quality_tolerance_limit,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+quality_assurance,risk_based_monitoring,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+quality_assurance,site_monitoring,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+quality_assurance,source_data_verification,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+quality_assurance,statistical_modeling,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+quality_assurance,statistical_modeling,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+quality_risk_assessment,statistical_modeling,2015-2019,2020-2023,0,2,4,6,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.4666666666666667,1.0,True
+quality_risk_assessment,statistical_modeling,2020-2023,2024-current,2,0,6,3,0.3333333333333333,0.0,-0.3333333333333333,0.3333333333333333,False,True,0.5000000000000001,1.0,True
+quality_tolerance_limit,risk_based_monitoring,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+quality_tolerance_limit,site_monitoring,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+quality_tolerance_limit,source_data_verification,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+risk_based_monitoring,site_monitoring,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+risk_based_monitoring,source_data_verification,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+site_monitoring,source_data_verification,2020-2023,2024-current,0,1,6,3,0.0,0.3333333333333333,0.3333333333333333,0.3333333333333333,True,False,0.33333333333333337,1.0,True
+accountability,centralized_monitoring,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+accountability,centralized_monitoring,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+accountability,clinical_trial,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+accountability,clinical_trial,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+accountability,data_integrity,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+accountability,data_integrity,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+accountability,governance,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+accountability,governance,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_reporting,adverse_event_underreporting,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_reporting,adverse_event_underreporting,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_reporting,clinical_quality_assurance,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_reporting,clinical_quality_assurance,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_reporting,clinical_study,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_reporting,clinical_study,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_reporting,clinical_trial,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_reporting,data_integrity,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_reporting,machine_learning,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_reporting,machine_learning,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_reporting,oversight,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_reporting,predictive_modeling,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_reporting,predictive_modeling,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_reporting,regulatory_guideline,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_reporting,regulatory_guideline,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_underreporting,clinical_quality_assurance,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_underreporting,clinical_quality_assurance,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_underreporting,clinical_study,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_underreporting,clinical_study,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_underreporting,clinical_trial,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_underreporting,clinical_trial,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_underreporting,data_integrity,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_underreporting,data_integrity,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_underreporting,machine_learning,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_underreporting,machine_learning,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_underreporting,oversight,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_underreporting,oversight,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_underreporting,predictive_modeling,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_underreporting,predictive_modeling,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+adverse_event_underreporting,regulatory_guideline,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+adverse_event_underreporting,regulatory_guideline,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+centralized_monitoring,clinical_trial,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+centralized_monitoring,clinical_trial,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+centralized_monitoring,data_integrity,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+centralized_monitoring,data_integrity,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+centralized_monitoring,governance,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+centralized_monitoring,governance,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_quality_assurance,clinical_study,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_quality_assurance,clinical_study,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_quality_assurance,clinical_trial,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_quality_assurance,data_integrity,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_quality_assurance,machine_learning,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_quality_assurance,machine_learning,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_quality_assurance,oversight,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_quality_assurance,oversight,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_quality_assurance,predictive_modeling,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_quality_assurance,predictive_modeling,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_quality_assurance,regulatory_guideline,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_quality_assurance,regulatory_guideline,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_research,clinical_study,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_research,clinical_study,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_research,clinical_trial,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_research,data_integrity,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_research,oversight,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_research,quality_assurance,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_research,quality_assurance,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_research,regulatory_guideline,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_research,regulatory_guideline,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_study,machine_learning,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_study,machine_learning,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_study,predictive_modeling,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_study,predictive_modeling,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_study,quality_assurance,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_study,quality_assurance,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_trial,data_integrity,Before 2015,2015-2019,1,3,1,4,1.0,0.75,-0.25,0.25,False,False,1.0,1.0,True
+clinical_trial,data_integrity,2015-2019,2020-2023,3,3,4,6,0.75,0.5,-0.25,0.25,False,False,0.5714285714285715,1.0,True
+clinical_trial,governance,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_trial,machine_learning,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_trial,machine_learning,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+clinical_trial,predictive_modeling,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+clinical_trial,predictive_modeling,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+data_integrity,governance,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+data_integrity,governance,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+data_integrity,machine_learning,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+data_integrity,machine_learning,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+data_integrity,predictive_modeling,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+data_integrity,predictive_modeling,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+machine_learning,oversight,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+machine_learning,oversight,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+machine_learning,predictive_modeling,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+machine_learning,predictive_modeling,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+machine_learning,regulatory_guideline,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+machine_learning,regulatory_guideline,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+oversight,predictive_modeling,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+oversight,predictive_modeling,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+oversight,quality_assurance,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+predictive_modeling,regulatory_guideline,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+predictive_modeling,regulatory_guideline,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+quality_assurance,regulatory_guideline,Before 2015,2015-2019,0,1,1,4,0.0,0.25,0.25,0.25,True,False,1.0,1.0,True
+quality_assurance,regulatory_guideline,2015-2019,2020-2023,1,0,4,6,0.25,0.0,-0.25,0.25,False,True,0.4,1.0,True
+backup_recovery,clinical_trial,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+backup_recovery,clinical_trial,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+backup_recovery,oversight,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+backup_recovery,oversight,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_quality_assurance,clinical_trial,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_quality_assurance,data_integrity,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_quality_assurance,interpretability,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_quality_assurance,interpretability,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_quality_assurance,quality_assurance,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_quality_assurance,quality_assurance,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_quality_assurance,quality_risk_assessment,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_quality_assurance,quality_risk_assessment,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_quality_assurance,sponsor_oversight,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_quality_assurance,sponsor_oversight,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_quality_assurance,statistical_modeling,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_quality_assurance,statistical_modeling,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_research,clinical_trial,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_research,data_integrity,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_research,oversight,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_research,site_monitoring,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_research,site_monitoring,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_trial,computerized_system,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_trial,computerized_system,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_trial,computerized_systems_validation,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_trial,computerized_systems_validation,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_trial,critical_to_quality,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_trial,critical_to_quality,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_trial,data_quality,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_trial,data_quality,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_trial,governance,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_trial,remote_auditing,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_trial,remote_auditing,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_trial,risk_based_monitoring,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_trial,site_monitoring,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_trial,sponsor_oversight,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_trial,sponsor_oversight,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_trial,technical_support,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+clinical_trial,technical_support,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+computerized_system,computerized_systems_validation,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+computerized_system,computerized_systems_validation,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+computerized_system,critical_to_quality,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+computerized_system,critical_to_quality,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+computerized_system,data_quality,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+computerized_system,data_quality,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+computerized_system,governance,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+computerized_system,governance,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+computerized_system,risk_based_monitoring,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+computerized_system,risk_based_monitoring,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+computerized_systems_validation,critical_to_quality,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+computerized_systems_validation,critical_to_quality,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+computerized_systems_validation,data_quality,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+computerized_systems_validation,data_quality,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+computerized_systems_validation,governance,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+computerized_systems_validation,governance,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+computerized_systems_validation,risk_based_monitoring,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+computerized_systems_validation,risk_based_monitoring,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+critical_to_quality,data_quality,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+critical_to_quality,data_quality,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+critical_to_quality,governance,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+critical_to_quality,governance,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+critical_to_quality,risk_based_monitoring,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+critical_to_quality,risk_based_monitoring,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+data_integrity,oversight,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+data_integrity,remote_auditing,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+data_integrity,remote_auditing,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+data_integrity,site_monitoring,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+data_integrity,sponsor_oversight,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+data_integrity,sponsor_oversight,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+data_quality,governance,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+data_quality,governance,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+data_quality,risk_based_monitoring,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+data_quality,risk_based_monitoring,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+governance,risk_based_monitoring,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+governance,risk_based_monitoring,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+interpretability,remote_auditing,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+interpretability,remote_auditing,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+interpretability,sponsor_oversight,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+interpretability,sponsor_oversight,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+oversight,site_monitoring,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+oversight,site_monitoring,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+oversight,technical_support,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+oversight,technical_support,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+quality_assurance,remote_auditing,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+quality_assurance,remote_auditing,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+quality_assurance,sponsor_oversight,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+quality_assurance,sponsor_oversight,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+quality_risk_assessment,remote_auditing,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+quality_risk_assessment,remote_auditing,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+quality_risk_assessment,sponsor_oversight,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+quality_risk_assessment,sponsor_oversight,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+remote_auditing,statistical_modeling,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+remote_auditing,statistical_modeling,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+sponsor_oversight,statistical_modeling,2015-2019,2020-2023,0,1,4,6,0.0,0.16666666666666666,0.16666666666666666,0.16666666666666666,True,False,1.0,1.0,True
+sponsor_oversight,statistical_modeling,2020-2023,2024-current,1,0,6,3,0.16666666666666666,0.0,-0.16666666666666666,0.16666666666666666,False,True,1.0,1.0,True
+clinical_trial,quality_assurance,2015-2019,2020-2023,2,2,4,6,0.5,0.3333333333333333,-0.16666666666666669,0.16666666666666669,False,False,1.0,1.0,False
+clinical_trial,site_monitoring,2020-2023,2024-current,1,1,6,3,0.16666666666666666,0.3333333333333333,0.16666666666666666,0.16666666666666666,False,False,1.0,1.0,False
+data_integrity,site_monitoring,2020-2023,2024-current,1,1,6,3,0.16666666666666666,0.3333333333333333,0.16666666666666666,0.16666666666666666,False,False,1.0,1.0,False
+clinical_quality_assurance,clinical_trial,2015-2019,2020-2023,1,1,4,6,0.25,0.16666666666666666,-0.08333333333333334,0.08333333333333334,False,False,1.0,1.0,False
+clinical_quality_assurance,data_integrity,2015-2019,2020-2023,1,1,4,6,0.25,0.16666666666666666,-0.08333333333333334,0.08333333333333334,False,False,1.0,1.0,False
+clinical_research,clinical_trial,2015-2019,2020-2023,1,1,4,6,0.25,0.16666666666666666,-0.08333333333333334,0.08333333333333334,False,False,1.0,1.0,False
+clinical_research,data_integrity,2015-2019,2020-2023,1,1,4,6,0.25,0.16666666666666666,-0.08333333333333334,0.08333333333333334,False,False,1.0,1.0,False
+clinical_research,oversight,2015-2019,2020-2023,1,1,4,6,0.25,0.16666666666666666,-0.08333333333333334,0.08333333333333334,False,False,1.0,1.0,False
+clinical_trial,governance,2015-2019,2020-2023,1,1,4,6,0.25,0.16666666666666666,-0.08333333333333334,0.08333333333333334,False,False,1.0,1.0,False
+data_integrity,quality_assurance,2015-2019,2020-2023,1,2,4,6,0.25,0.3333333333333333,0.08333333333333331,0.08333333333333331,False,False,1.0,1.0,False
+accountability,centralized_monitoring,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+accountability,clinical_trial,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+accountability,data_integrity,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+accountability,governance,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,adverse_event_underreporting,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,clinical_quality_assurance,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,clinical_study,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,clinical_trial,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,corrective_preventive_action,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,corrective_preventive_action,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,data_integrity,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,data_quality,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,data_quality,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,machine_learning,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,oversight,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,predictive_modeling,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,quality_assurance,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,quality_assurance,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,regulatory_guideline,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,roles_responsibilities,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_reporting,roles_responsibilities,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_underreporting,clinical_quality_assurance,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_underreporting,clinical_study,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_underreporting,clinical_trial,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_underreporting,data_integrity,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_underreporting,machine_learning,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_underreporting,oversight,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_underreporting,predictive_modeling,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+adverse_event_underreporting,regulatory_guideline,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+backup_recovery,clinical_trial,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+backup_recovery,oversight,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+central_statistical_monitoring,clinical_trial,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+central_statistical_monitoring,clinical_trial,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+central_statistical_monitoring,data_integrity,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+central_statistical_monitoring,data_integrity,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+central_statistical_monitoring,outlier_detection,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+central_statistical_monitoring,outlier_detection,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+central_statistical_monitoring,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+central_statistical_monitoring,risk_based_monitoring,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+centralized_monitoring,clinical_trial,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+centralized_monitoring,data_integrity,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+centralized_monitoring,governance,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_quality_assurance,clinical_study,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_quality_assurance,interpretability,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_quality_assurance,machine_learning,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_quality_assurance,oversight,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_quality_assurance,predictive_modeling,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_quality_assurance,quality_assurance,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_quality_assurance,quality_risk_assessment,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_quality_assurance,regulatory_guideline,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_quality_assurance,sponsor_oversight,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_quality_assurance,statistical_modeling,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_research,clinical_study,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_research,quality_assurance,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_research,regulatory_guideline,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_research,site_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_study,clinical_trial,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_study,data_integrity,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_study,machine_learning,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_study,oversight,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_study,predictive_modeling,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_study,quality_assurance,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_study,regulatory_guideline,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,computerized_system,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,computerized_systems_validation,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,corrective_preventive_action,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,corrective_preventive_action,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,critical_to_quality,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,governance_traceability,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,governance_traceability,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,interpretability,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,outlier_detection,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,outlier_detection,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,oversight,2015-2019,2020-2023,2,3,4,6,0.5,0.5,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,predictive_modeling,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,quality_assurance,2020-2023,2024-current,2,1,6,3,0.3333333333333333,0.3333333333333333,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,quality_by_design,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,quality_by_design,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,quality_risk_assessment,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,quality_tolerance_limit,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,quality_tolerance_limit,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,regulatory_guideline,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,remote_auditing,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,roles_responsibilities,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,roles_responsibilities,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,site_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,source_data_verification,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,source_data_verification,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,sponsor_oversight,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,statistical_modeling,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+clinical_trial,technical_support,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+computerized_system,computerized_systems_validation,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+computerized_system,critical_to_quality,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+computerized_system,data_quality,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+computerized_system,governance,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+computerized_system,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+computerized_systems_validation,critical_to_quality,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+computerized_systems_validation,data_quality,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+computerized_systems_validation,governance,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+computerized_systems_validation,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+corrective_preventive_action,data_integrity,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+corrective_preventive_action,data_integrity,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+corrective_preventive_action,data_quality,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+corrective_preventive_action,data_quality,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+corrective_preventive_action,oversight,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+corrective_preventive_action,oversight,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+corrective_preventive_action,quality_assurance,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+corrective_preventive_action,quality_assurance,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+corrective_preventive_action,roles_responsibilities,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+corrective_preventive_action,roles_responsibilities,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+critical_to_quality,data_quality,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+critical_to_quality,governance,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+critical_to_quality,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,data_quality,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,data_quality,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,governance,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,governance_traceability,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,governance_traceability,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,interpretability,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,outlier_detection,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,outlier_detection,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,predictive_modeling,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,quality_assurance,2020-2023,2024-current,2,1,6,3,0.3333333333333333,0.3333333333333333,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,quality_by_design,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,quality_by_design,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,quality_risk_assessment,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,quality_tolerance_limit,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,quality_tolerance_limit,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,regulatory_guideline,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,remote_auditing,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,risk_based_monitoring,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,roles_responsibilities,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,roles_responsibilities,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,site_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,source_data_verification,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,source_data_verification,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,sponsor_oversight,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_integrity,statistical_modeling,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_quality,governance,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_quality,oversight,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_quality,oversight,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_quality,quality_assurance,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_quality,quality_assurance,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_quality,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_quality,roles_responsibilities,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+data_quality,roles_responsibilities,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+governance,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+governance_traceability,quality_by_design,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+governance_traceability,quality_by_design,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+interpretability,quality_assurance,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+interpretability,quality_risk_assessment,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+interpretability,remote_auditing,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+interpretability,sponsor_oversight,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+interpretability,statistical_modeling,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,oversight,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,predictive_modeling,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,quality_assurance,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,quality_assurance,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,quality_tolerance_limit,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,quality_tolerance_limit,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,regulatory_guideline,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,risk_based_monitoring,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,site_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,site_monitoring,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,source_data_verification,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+machine_learning,source_data_verification,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+outlier_detection,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+outlier_detection,risk_based_monitoring,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+oversight,predictive_modeling,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+oversight,quality_assurance,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+oversight,regulatory_guideline,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+oversight,roles_responsibilities,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+oversight,roles_responsibilities,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+oversight,site_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+oversight,technical_support,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+predictive_modeling,regulatory_guideline,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,quality_risk_assessment,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,quality_tolerance_limit,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,quality_tolerance_limit,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,regulatory_guideline,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,remote_auditing,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,risk_based_monitoring,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,roles_responsibilities,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,roles_responsibilities,2020-2023,2024-current,0,0,6,3,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,site_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,site_monitoring,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,source_data_verification,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,source_data_verification,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,sponsor_oversight,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_assurance,statistical_modeling,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_risk_assessment,remote_auditing,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_risk_assessment,sponsor_oversight,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_risk_assessment,statistical_modeling,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_tolerance_limit,risk_based_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_tolerance_limit,risk_based_monitoring,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_tolerance_limit,site_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_tolerance_limit,site_monitoring,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_tolerance_limit,source_data_verification,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+quality_tolerance_limit,source_data_verification,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+remote_auditing,statistical_modeling,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+risk_based_monitoring,site_monitoring,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+risk_based_monitoring,site_monitoring,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+risk_based_monitoring,source_data_verification,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+risk_based_monitoring,source_data_verification,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+site_monitoring,source_data_verification,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+site_monitoring,source_data_verification,2015-2019,2020-2023,0,0,4,6,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False
+sponsor_oversight,statistical_modeling,Before 2015,2015-2019,0,0,1,4,0.0,0.0,0.0,0.0,False,False,1.0,1.0,False

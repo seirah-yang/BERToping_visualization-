@@ -1,34 +1,98 @@
 
-<h2 class="sr-only">RBQM 연구 3D 시맨틱 네트워크 갭 분석 — COVID-19 전후 노드 변화를 3차원 공간에서 시각화</h2>
+<h2 class="sr-only">Network Analysis - Pre/Post COIVD: Gap-analysis 3D visualization</h2>
 
-<div id="canvas-wrap" style="width:100%;height:520px;position:relative;background:#0a0e1a;border-radius:12px;overflow:hidden;">
-  <canvas id="c3d" style="display:block;width:100%;height:100%;"></canvas>
+<div id="canvas-wrap" style="width:100%;height:520px;
+  position:relative;background:#0a0e1a;border-radius:12px;
+  overflow:hidden;">
+  
+  <canvas id="c3d" style="display:block;width:100%;
+    height:100%;"></canvas>
 
-  <div id="tip" style="position:absolute;display:none;pointer-events:none;background:rgba(10,14,26,0.92);border:0.5px solid rgba(255,255,255,0.18);border-radius:8px;padding:10px 14px;font-size:12px;color:#e2e8f0;max-width:210px;z-index:10;line-height:1.55;"></div>
+  <div id="tip" style="position:absolute;
+    display:none;pointer-events:none;
+    background:rgba(10,14,26,0.92);
+    border:1px solid rgba(255,255,255,0.55);
+    border-radius:8px;padding:10px 14px;
+    font-size:12px;
+    color:#e2e8f0;
+    max-width:230px;
+    z-index:10;
+    line-height:1.55;">
+    </div>
 
-  <div style="position:absolute;top:12px;left:14px;display:flex;gap:6px;flex-wrap:wrap;">
-    <button id="btn-all" onclick="setFilter('all')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.15);color:#e2e8f0;cursor:pointer;">전체</button>
-    <button id="btn-new" onclick="setFilter('new')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #1D9E75;background:rgba(29,158,117,0.2);color:#5DCAA5;cursor:pointer;">신규 등장</button>
-    <button id="btn-rise" onclick="setFilter('rise')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #EF9F27;background:rgba(239,159,39,0.15);color:#FAC775;cursor:pointer;">Post-COVID 성장</button>
-    <button id="btn-dec" onclick="setFilter('dec')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #D85A30;background:rgba(216,90,48,0.15);color:#F0997B;cursor:pointer;">쇠퇴</button>
-    <button id="btn-pre" onclick="setFilter('pre')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.08);color:#9ca3af;cursor:pointer;">Pre-COVID 엣지</button>
+  <div style="position:absolute;top:12px;
+    left:14px;display:flex;gap:6px;
+    flex-wrap:wrap;">
+    
+    <button id="btn-all" onclick="setFilter('all')" style="font-size:11px;
+      padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.3);
+      background:rgba(255,255,255,0.15);color:#e2e8f0;cursor:pointer;">All</button>
+    
+    <button id="btn-new" onclick="setFilter('new')" style="font-size:11px;
+      padding:4px 10px;border-radius:20px;border:0.5px solid #1D9E75;
+      background:rgba(29,158,117,0.2);color:#5DCAA5;
+      cursor:pointer;">New after COVID</button>
+    
+    <button id="btn-rise" onclick="setFilter('rise')" style="font-size:11px;
+      padding:4px 10px;border-radius:20px;
+      border:0.5px solid #EF9F27;
+      background:rgba(239,159,39,0.15);
+      color:#FAC775;
+      cursor:pointer;">Post-COVID Rise</button>
+    
+    <button id="btn-dec" onclick="setFilter('dec')" style="font-size:11px;
+      padding:4px 10px;border-radius:20px;border:0.5px solid #D85A30;
+      background:rgba(216,90,48,0.15);color:#F0997B;cursor:pointer;">Decline</button>
+    
+    <button id="btn-pre" onclick="setFilter('pre')" style="font-size:11px;
+      padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.25);
+      background:rgba(255,255,255,0.08);color:#9ca3af;cursor:pointer;">Pre-COVID Edge</button>
   </div>
 
-  <div style="position:absolute;bottom:12px;left:14px;font-size:10px;color:rgba(255,255,255,0.4);line-height:1.7;">
+  <div style="position:absolute;bottom:12px;left:14px;font-size:10px;
+    color:rgba(255,255,255,0.4);line-height:1.7;">
     드래그: 회전 &nbsp;·&nbsp; 스크롤: 줌 &nbsp;·&nbsp; 노드 클릭: 상세
   </div>
 
-  <div style="position:absolute;bottom:12px;right:14px;display:flex;flex-direction:column;gap:4px;font-size:10px;color:rgba(255,255,255,0.55);">
-    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1D9E75;margin-right:5px;vertical-align:middle;"></span>신규 등장</span>
-    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#EF9F27;margin-right:5px;vertical-align:middle;"></span>Post-COVID 성장</span>
-    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#D85A30;margin-right:5px;vertical-align:middle;"></span>쇠퇴</span>
-    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#888;margin-right:5px;vertical-align:middle;"></span>안정</span>
+  <div style="position:absolute;bottom:12px;right:14px;
+    display:flex;flex-direction:column;gap:4px;
+    font-size:10px;color:rgba(255,255,255,0.55);">
+    
+    <span><span style="display:inline-block;width:9px;
+            height:9px;border-radius:50%;background:#1D9E75;
+            margin-right:5px;vertical-align:middle;"></span>New after COVID</span>
+    
+    <span><span style="display:inline-block;width:9px;
+            height:9px;border-radius:50%;background:#EF9F27;
+            margin-right:5px;vertical-align:middle;"></span>Post-COVID Rise</span>
+    
+    <span><span style="display:inline-block;width:9px;
+            height:9px;border-radius:50%;background:#D85A30;
+            margin-right:5px;vertical-align:middle;"></span>Decline</span>
+    
+    <span><span style="display:inline-block;width:9px;
+            height:9px;border-radius:50%;background:#888;
+            margin-right:5px;vertical-align:middle;"></span>Stable</span>
   </div>
 </div>
 
-<div id="info-panel" style="display:none;background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:10px;padding:14px 18px;margin-top:10px;font-size:13px;">
-  <div style="font-weight:500;font-size:14px;color:var(--color-text-primary);margin-bottom:8px;" id="info-title"></div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 20px;color:var(--color-text-secondary);" id="info-body"></div>
+<div id="info-panel" style="display:none;
+  background:var(--color-background-primary);
+  border:0.5px solid var(--color-border-tertiary);
+  border-radius:10px;
+  padding:14px 18px;
+  margin-top:10px;
+  font-size:13px;">
+  
+  <div id="info-title" style="font-weight:500;
+    font-size:14px;
+    color:var(--color-text-primary);
+    margin-bottom:8px;"></div>
+  
+  <div id="info-body" style="display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:6px 20px;
+    color:var(--color-text-secondary);"></div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -163,19 +227,44 @@ NODES.forEach(n => {
 });
 
 function makeEdge(src, tgt, w, isCovid) {
-  const sM = nodeMap[src], tM = nodeMap[tgt];
+  const sM = nodeMap[src];
+  const tM = nodeMap[tgt];
+
   if (!sM || !tM) return null;
+  
   const p1 = sM.position, p2 = tM.position;
   const pts = [p1, p2];
-  const geo = new THREE.BufferGeometry().setFromPoints(pts);
-  const col = isCovid ? 0x5DCAA5 : 0x888780;
-  const mat = new THREE.LineBasicMaterial({color:col, transparent:true, opacity: isCovid ? 0.7 : 0.35, linewidth:1});
+  
+  const geo = new THREE.BufferGeometry().setFromPoints([
+    sM.position,
+    tM.position
+  ]);
+
+  const col = isCovid ? 0x00FFD0 : 0xE5E7EB;
+  
+  const opacity = isCovid
+    ? Math.min(1, 0.6 + w * 0.08)
+    : Math.min(0.8, 0.3 + w * 0.05);
+  
+  const mat = new THREE.LineBasicMaterial({
+    color: col,
+    transparent: true,
+    opacity: opacity
+   });
+
   const line = new THREE.Line(geo, mat);
-  line.userData = {src, tgt, w, isCovid};
+
+  line.userData = {
+    src,
+    tgt,
+    w,
+    isCovid
+  };
+  
   scene.add(line);
   return line;
-}
-
+  }
+  
 EDGES.forEach(e => {
   const isCovid = e.firstYear >= 2020;
   const line = makeEdge(e.s, e.t, e.w, isCovid);
@@ -186,8 +275,13 @@ let isDragging = false, prevMouse = {x:0, y:0};
 let rotX = 0, rotY = 0;
 const pivot = new THREE.Group();
 scene.add(pivot);
-meshes.forEach(m => { scene.remove(m); pivot.add(m); if(m.userData._ring){scene.remove(m.userData._ring);pivot.add(m.userData._ring);} });
-edgeMeshes.forEach(e => { scene.remove(e); pivot.add(e); });
+meshes.forEach(m => { scene.remove(m); pivot.add(m); 
+                     if(m.userData._ring){scene.remove(m.userData._ring);
+                                          pivot.add(m.userData._ring);} 
+                    });
+edgeMeshes.forEach(e => { scene.remove(e); 
+                         pivot.add(e); 
+                        });
 
 canvas.addEventListener("mousedown", e => { isDragging=true; prevMouse={x:e.clientX,y:e.clientY}; });
 window.addEventListener("mouseup", () => isDragging=false);
@@ -232,7 +326,7 @@ function handleHover(e) {
         <span style="color:#9ca3af;">변화</span><span style="color:${changeCol};">${changeStr}</span>
         <span style="color:#9ca3af;">문헌 수</span><span>${n.freq}편</span>
       </div>
-      ${n.isNew ? '<div style="margin-top:6px;font-size:10px;background:rgba(29,158,117,0.25);color:#5DCAA5;padding:2px 6px;border-radius:4px;display:inline-block;">신규 등장</div>' : ''}`;
+      ${n.isNew ? '<div style="margin-top:6px;font-size:10px;background:rgba(29,158,117,0.25);color:#5DCAA5;padding:2px 6px;border-radius:4px;display:inline-block;">New after COVID</div>' : ''}`;
     tip.style.left = tx + "px";
     tip.style.top = ty + "px";
     tip.style.display = "block";
@@ -254,7 +348,7 @@ function handleClick(e) {
 function showInfoPanel(n) {
   const panel = document.getElementById("info-panel");
   document.getElementById("info-title").textContent = n.label.toUpperCase();
-  const statusLabel = n.isNew ? "신규 등장 (Post-COVID)" : n.delta > 0.08 ? "Post-COVID 성장" : n.delta < -0.2 ? "쇠퇴 (Gap 영역)" : "안정";
+  const statusLabel = n.isNew ? "New after COVID (Post-COVID)" : n.delta > 0.08 ? "Post-COVID Rise" : n.delta < -0.2 ? "Decline (Gap 영역)" : "Stable";
   const statusCol = n.isNew ? "#1D9E75" : n.delta > 0.08 ? "#EF9F27" : n.delta < -0.2 ? "#D85A30" : "#888";
   document.getElementById("info-body").innerHTML = `
     <span style="color:var(--color-text-secondary);">카테고리</span><span>${n.cat.replace(/_/g,' ')}</span>

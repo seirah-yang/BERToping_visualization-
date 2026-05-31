@@ -4,27 +4,35 @@
 <div id="canvas-wrap" style="width:100%;height:520px;position:relative;background:#0a0e1a;border-radius:12px;overflow:hidden;">
   <canvas id="c3d" style="display:block;width:100%;height:100%;"></canvas>
 
-  <div id="tip" style="position:absolute;display:none;pointer-events:none;background:rgba(10,14,26,0.92);border:0.5px solid rgba(255,255,255,0.18);border-radius:8px;padding:10px 14px;font-size:12px;color:#e2e8f0;max-width:210px;z-index:10;line-height:1.55;"></div>
+  <div id="tip" style="position:absolute;display:none;pointer-events:none;background:rgba(10,14,26,0.92);border:0.5px solid rgba(255,255,255,0.18);border-radius:8px;padding:10px 14px;font-size:12px;color:#e2e8f0;max-width:230px;z-index:10;line-height:1.55;"></div>
 
   <div style="position:absolute;top:12px;left:14px;display:flex;gap:6px;flex-wrap:wrap;">
-    <button id="btn-all" onclick="setFilter('all')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.15);color:#e2e8f0;cursor:pointer;">All</button>
-    <button id="btn-new" onclick="setFilter('new')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #1D9E75;background:rgba(29,158,117,0.2);color:#5DCAA5;cursor:pointer;">New after COVID</button>
-    <button id="btn-rise" onclick="setFilter('rise')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #EF9F27;background:rgba(239,159,39,0.15);color:#FAC775;cursor:pointer;">Post-COVID Rise</button>
-    <button id="btn-dec" onclick="setFilter('dec')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #D85A30;background:rgba(216,90,48,0.15);color:#F0997B;cursor:pointer;">Decline</button>
-    <button id="btn-pre" onclick="setFilter('pre')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.08);color:#9ca3af;cursor:pointer;">Pre-COVID Edge</button>
+    <button onclick="setFilter('all')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.15);color:#e2e8f0;cursor:pointer;">All</button>
+    <button onclick="setFilter('new')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #1D9E75;background:rgba(29,158,117,0.2);color:#5DCAA5;cursor:pointer;">New after COVID</button>
+    <button onclick="setFilter('rise')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #EF9F27;background:rgba(239,159,39,0.15);color:#FAC775;cursor:pointer;">Post-COVID Rise</button>
+    <button onclick="setFilter('dec')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #D85A30;background:rgba(216,90,48,0.15);color:#F0997B;cursor:pointer;">Decline</button>
+    <button onclick="setFilter('pre')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.08);color:#9ca3af;cursor:pointer;">Pre-COVID Edge</button>
   </div>
-
   <div style="position:absolute;bottom:12px;left:14px;font-size:10px;color:rgba(255,255,255,0.4);line-height:1.7;">
     드래그: 회전 &nbsp;·&nbsp; 스크롤: 줌 &nbsp;·&nbsp; 노드 클릭: 상세
   </div>
 
-  <div style="position:absolute;bottom:12px;right:14px;display:flex;flex-direction:column;gap:4px;font-size:10px;color:rgba(255,255,255,0.55);">
+  <div style="position:absolute;bottom:12px;right:14px;display:flex;flex-direction:column;gap:4px;font-size:10px;color:rgba(255,255,255,0.55);max-width:230px;">
     <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1D9E75;margin-right:5px;vertical-align:middle;"></span>New after COVID</span>
     <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#EF9F27;margin-right:5px;vertical-align:middle;"></span>Post-COVID Rise</span>
     <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#D85A30;margin-right:5px;vertical-align:middle;"></span>Decline</span>
     <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#888;margin-right:5px;vertical-align:middle;"></span>Stable</span>
-  </div>
-</div>
+
+    <span style="margin-top:6px;border-top:0.5px solid rgba(255,255,255,0.15);padding-top:6px;">
+      <span style="display:inline-block;width:22px;height:3px;background:#5DCAA5;margin-right:5px;vertical-align:middle;"></span>Post-COVID edge
+    </span>
+    <span>
+      <span style="display:inline-block;width:22px;height:3px;background:#888780;margin-right:5px;vertical-align:middle;"></span>Pre/Persistent edge
+    </span>
+    <span style="color:rgba(255,255,255,0.42);line-height:1.45;">
+      Edge weight = number of co-occurring publications
+    </span>
+  </div></div>
 
 <div id="info-panel" style="display:none;background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:10px;padding:14px 18px;margin-top:10px;font-size:13px;">
   <div style="font-weight:500;font-size:14px;color:var(--color-text-primary);margin-bottom:8px;" id="info-title"></div>
@@ -178,7 +186,7 @@ function makeEdge(src, tgt, w, isCovid) {
 
 EDGES.forEach(e => {
   const isCovid = e.firstYear >= 2020;
-  const line = makeEdge(e.s, e.t, e.w, isCovid);
+  const line = makeEdge(e.s, e.t, e.w, isCovid, e.firstYear, e.lastYear);
   if (line) edgeMeshes.push(line);
 });
 
@@ -267,10 +275,8 @@ function showInfoPanel(n) {
     <span style="color:var(--color-text-secondary);">갭 상태</span><span style="color:${statusCol};">${statusLabel}</span>`;
   panel.style.display = "block";
 }
-<div class="sub" style="margin-top:10px">
-  Edge thickness reflects the number of publications in which two concepts co-occurred.
-  Thicker connections indicate more persistent conceptual coupling in RBQM literature.
-</div>
+
+"margin-top:10px"
   
 let currentFilter = "all";
 function setFilter(f) {

@@ -1,0 +1,251 @@
+
+<h2 class="sr-only">RBQM 갭 분석 Scatter Plot (수정) — post_vs_pre_covid 기준 COVID-19 전후 키워드 변화</h2>
+
+<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:4px;padding-top:0.5rem;">
+  <div style="font-size:13px;color:var(--color-text-secondary);">X축: Pre-COVID 문헌 비중 &nbsp;·&nbsp; Y축: Post-COVID 문헌 비중 &nbsp;·&nbsp; 원 크기: 전체 문헌 수</div>
+  <div id="legend2" style="display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--color-text-secondary);"></div>
+</div>
+
+<div style="position:relative;width:100%;height:480px;">
+  <canvas id="sc2" role="img" aria-label="COVID-19 전후 RBQM 연구 키워드 변화 scatter plot. post_vs_pre_covid 컬럼 기준 재분류.">각 점은 RBQM 키워드 노드입니다.</canvas>
+</div>
+
+<div id="tip2" style="position:fixed;background:var(--color-background-primary);border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);padding:8px 12px;font-size:12px;pointer-events:none;display:none;z-index:999;max-width:230px;"></div>
+
+<div style="margin-top:10px;padding:10px 14px;background:var(--color-background-secondary);border-radius:var(--border-radius-md);font-size:12px;color:var(--color-text-secondary);line-height:1.6;">
+  <span style="font-weight:500;color:var(--color-text-primary);">분류 기준 (post_vs_pre_covid):</span>
+  &nbsp;▲ 신규 등장 — Pre-COVID 비중 0, Post-COVID 출현 &nbsp;·&nbsp;
+  <span style="color:#639922;">◆ 성장</span> — 기존 노드 중 post_vs_pre_covid &gt; 0.05 &nbsp;·&nbsp;
+  <span style="color:#888;">● 안정</span> — ±0.05 이내 &nbsp;·&nbsp;
+  <span style="color:#D85A30;">▼ 쇠퇴</span> — post_vs_pre_covid &lt; -0.05
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const raw2 = [
+  {node:"risk_based_monitoring",cat:"Monitoring",pre:0,post:0.667,pvp:0.417,freq:3,status:"new"},
+  {node:"governance_traceability",cat:"Governance",pre:0,post:0.333,pvp:0.167,freq:1,status:"new"},
+  {node:"central_statistical_monitoring",cat:"Monitoring",pre:0,post:0.333,pvp:0.167,freq:1,status:"new"},
+  {node:"source_data_verification",cat:"Monitoring",pre:0,post:0.333,pvp:0.167,freq:1,status:"new"},
+  {node:"site_monitoring",cat:"Monitoring",pre:0,post:0.333,pvp:0.25,freq:2,status:"new"},
+  {node:"quality_tolerance_limit",cat:"Risk",pre:0,post:0.333,pvp:0.167,freq:1,status:"new"},
+  {node:"quality_by_design",cat:"RBQM",pre:0,post:0.333,pvp:0.167,freq:1,status:"new"},
+  {node:"outlier_detection",cat:"AI",pre:0,post:0.333,pvp:0.167,freq:1,status:"new"},
+  {node:"data_integrity",cat:"Data",pre:1,post:1,pvp:0,freq:10,status:"stable"},
+  {node:"machine_learning",cat:"AI",pre:0.25,post:0.333,pvp:-0.083,freq:2,status:"decline"},
+  {node:"interpretability",cat:"AI",pre:0,post:0.333,pvp:0.167,freq:2,status:"new"},
+  {node:"statistical_modeling",cat:"Statistics",pre:0,post:0.333,pvp:0.167,freq:2,status:"new"},
+  {node:"sponsor_oversight",cat:"Governance",pre:0,post:0.167,pvp:0.083,freq:1,status:"new"},
+  {node:"roles_responsibilities",cat:"Governance",pre:1,post:0,pvp:0,freq:1,status:"stable"},
+  {node:"remote_auditing",cat:"Monitoring",pre:0,post:0.167,pvp:0.083,freq:1,status:"new"},
+  {node:"quality_risk_assessment",cat:"Risk",pre:0,post:0.333,pvp:0.167,freq:2,status:"new"},
+  {node:"technical_support",cat:"Data",pre:0,post:0.167,pvp:0.083,freq:1,status:"new"},
+  {node:"computerized_system",cat:"Data",pre:0,post:0.167,pvp:0.083,freq:1,status:"new"},
+  {node:"data_quality",cat:"Data",pre:1,post:0.167,pvp:0.083,freq:2,status:"rise"},
+  {node:"critical_to_quality",cat:"RBQM",pre:0,post:0.167,pvp:0.083,freq:1,status:"new"},
+  {node:"backup_recovery",cat:"Data",pre:0,post:0.167,pvp:0.083,freq:1,status:"new"},
+  {node:"corrective_preventive_action",cat:"Governance",pre:1,post:0,pvp:0,freq:1,status:"stable"},
+  {node:"computerized_systems_validation",cat:"Governance",pre:0,post:0.167,pvp:0.083,freq:1,status:"new"},
+  {node:"clinical_trial",cat:"Clinical_Operations",pre:1,post:1,pvp:0,freq:14,status:"stable"},
+  {node:"quality_assurance",cat:"RBQM",pre:1,post:0.333,pvp:-0.167,freq:6,status:"decline"},
+  {node:"clinical_research",cat:"Clinical_Operations",pre:0.25,post:0.167,pvp:-0.167,freq:2,status:"decline"},
+  {node:"adverse_event_underreporting",cat:"Data",pre:0.25,post:0,pvp:-0.25,freq:1,status:"decline"},
+  {node:"centralized_monitoring",cat:"Monitoring",pre:0.25,post:0,pvp:-0.25,freq:1,status:"decline"},
+  {node:"clinical_quality_assurance",cat:"RBQM",pre:0.25,post:0.167,pvp:-0.167,freq:2,status:"decline"},
+  {node:"governance",cat:"Governance",pre:0.25,post:0.167,pvp:-0.167,freq:2,status:"decline"},
+  {node:"adverse_event_reporting",cat:"Data",pre:1,post:0,pvp:-0.25,freq:2,status:"decline"},
+  {node:"predictive_modeling",cat:"AI",pre:0.25,post:0,pvp:-0.25,freq:1,status:"decline"},
+  {node:"accountability",cat:"Governance",pre:0.25,post:0,pvp:-0.25,freq:1,status:"decline"},
+  {node:"clinical_study",cat:"Clinical_Operations",pre:0.5,post:0,pvp:-0.5,freq:2,status:"decline"},
+  {node:"regulatory_guideline",cat:"Governance",pre:0.5,post:0,pvp:-0.5,freq:2,status:"decline"},
+  {node:"oversight",cat:"Clinical_Operations",pre:1,post:0.5,pvp:-0.25,freq:6,status:"decline"},
+];
+
+const catCol = {
+  Monitoring:"#1D9E75",Governance:"#7F77DD",Data:"#378ADD",
+  RBQM:"#D85A30",AI:"#EF9F27",Risk:"#D4537E",
+  Statistics:"#888780",Clinical_Operations:"#5F5E5A",
+};
+
+const statusStyle = {
+  new:    {pStyle:"triangle", bCol:"#1D9E75", bWidth:2.5},
+  rise:   {pStyle:"rectRot",  bCol:"#639922", bWidth:2.5},
+  stable: {pStyle:"circle",   bCol:null,      bWidth:1},
+  decline:{pStyle:"rectRot",  bCol:"#D85A30", bWidth:1.5},
+};
+
+function mkDs(status, label) {
+  const arr = raw2.filter(d => d.status === status);
+  const ss = statusStyle[status];
+  return {
+    label,
+    data: arr.map(d => ({x:d.pre, y:d.post, r:Math.max(7, Math.min(24, d.freq*2.8)), meta:d})),
+    backgroundColor: arr.map(d => (catCol[d.cat]||"#888") + (status==="stable"||status==="decline"?"66":"BB")),
+    borderColor: arr.map(d => ss.bCol || (catCol[d.cat]||"#888")),
+    borderWidth: arr.map(() => ss.bWidth),
+    pointStyle: ss.pStyle,
+    hoverRadius: 0,
+  };
+}
+
+const datasets = [
+  mkDs("new",     "▲ 신규 등장 (Pre=0 → Post 출현, 18개)"),
+  mkDs("rise",    "◆ 기존 성장 (post_vs_pre > 0.05, 1개)"),
+  mkDs("stable",  "● 안정 (±0.05 이내, 4개)"),
+  mkDs("decline", "▼ 쇠퇴 (post_vs_pre < -0.05, 13개)"),
+];
+
+const diagPlugin = {
+  id:"diag2",
+  beforeDraw(ch) {
+    const {ctx,chartArea:{left,right,top,bottom},scales} = ch;
+    const x0=scales.x.getPixelForValue(0),y0=scales.y.getPixelForValue(0);
+    const x1=scales.x.getPixelForValue(1),y1=scales.y.getPixelForValue(1);
+    ctx.save();
+    ctx.setLineDash([6,4]);
+    ctx.strokeStyle="rgba(136,135,128,0.45)";
+    ctx.lineWidth=1.5;
+    ctx.beginPath();ctx.moveTo(x0,y0);ctx.lineTo(x1,y1);ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.font="11px var(--font-sans,sans-serif)";
+    ctx.fillStyle="rgba(29,158,117,0.6)";
+    ctx.fillText("Post-COVID 성장 영역 ↑",left+8,top+18);
+    ctx.fillStyle="rgba(216,90,48,0.5)";
+    ctx.fillText("Post-COVID 쇠퇴 영역 ↓",right-130,bottom-8);
+
+    ctx.beginPath();
+    ctx.moveTo(x0,y0);ctx.lineTo(x1,y1);
+    ctx.lineTo(scales.x.getPixelForValue(1.1),scales.y.getPixelForValue(1.1));
+    ctx.lineTo(scales.x.getPixelForValue(-0.05),scales.y.getPixelForValue(1.1));
+    ctx.closePath();
+    ctx.fillStyle="rgba(29,158,117,0.04)";ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(x0,y0);ctx.lineTo(x1,y1);
+    ctx.lineTo(scales.x.getPixelForValue(1.1),scales.y.getPixelForValue(-0.05));
+    ctx.lineTo(scales.x.getPixelForValue(-0.05),scales.y.getPixelForValue(-0.05));
+    ctx.closePath();
+    ctx.fillStyle="rgba(216,90,48,0.04)";ctx.fill();
+    ctx.restore();
+  }
+};
+
+const labelPlugin = {
+  id:"labels2",
+  afterDraw(ch) {
+    const {ctx, scales, chartArea} = ch;
+    const placed = [];
+
+    ctx.save();
+    ctx.font = "500 10px var(--font-sans,sans-serif)";
+
+    ch.data.datasets.forEach(ds => {
+      ds.data.forEach(pt => {
+        const d = pt.meta;
+        if (d.status === "stable") return;
+
+        // 너무 작은 빈도 라벨은 숨김
+        if (d.freq < 2 && d.status !== "decline") return;
+
+        const xp = scales.x.getPixelForValue(pt.x);
+        const yp = scales.y.getPixelForValue(pt.y);
+        const r = pt.r || 8;
+        const label = d.node.replace(/_/g, " ");
+        const tw = ctx.measureText(label).width;
+        const th = 11;
+
+        let tx = xp + r + 5;
+        let ty = yp - r - 5;
+
+        if (pt.x > 0.65) tx = xp - tw - r - 5;
+
+        // 충돌하면 아래로 밀기
+        let box = {x: tx, y: ty - th, w: tw, h: th};
+        let tries = 0;
+
+        while (
+          placed.some(p =>
+            box.x < p.x + p.w &&
+            box.x + box.w > p.x &&
+            box.y < p.y + p.h &&
+            box.y + box.h > p.y
+          ) &&
+          tries < 8
+        ) {
+          ty += 13;
+          box = {x: tx, y: ty - th, w: tw, h: th};
+          tries++;
+        }
+
+        // 그래프 영역 밖으로 나가면 숨김
+        if (
+          box.x < chartArea.left ||
+          box.x + box.w > chartArea.right ||
+          box.y < chartArea.top ||
+          box.y + box.h > chartArea.bottom
+        ) return;
+
+        placed.push(box);
+
+        ctx.fillStyle = catCol[d.cat] || "#555";
+        ctx.fillText(label, tx, ty);
+      });
+    });
+
+    ctx.restore();
+  }
+};
+
+const tip2=document.getElementById("tip2");
+const chart2=new Chart(document.getElementById("sc2"),{
+  type:"bubble",
+  data:{datasets},
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    layout:{padding:{top:30,right:20,bottom:20,left:10}},
+    scales:{
+      x:{title:{display:true,text:"Pre-COVID 문헌 비중",font:{size:12},color:"#888"},
+         min:-0.05,max:1.15,
+         ticks:{callback:v=>(v*100).toFixed(0)+"%",font:{size:11}},
+         grid:{color:"rgba(136,135,128,0.12)"}},
+      y:{title:{display:true,text:"Post-COVID 문헌 비중",font:{size:12},color:"#888"},
+         min:-0.05,max:1.15,
+         ticks:{callback:v=>(v*100).toFixed(0)+"%",font:{size:11}},
+         grid:{color:"rgba(136,135,128,0.12)"}},
+    },
+    plugins:{
+      legend:{display:false},
+      tooltip:{enabled:false,
+        external(ctx2){
+          const tt=ctx2.tooltip;
+          if(tt.opacity===0){tip2.style.display="none";return;}
+          const pt=tt.dataPoints?.[0];if(!pt)return;
+          const d=pt.raw.meta;
+          const statusLbl={new:"신규 등장",rise:"Post-COVID 성장",stable:"안정",decline:"쇠퇴"};
+          const statusCol={new:"#1D9E75",rise:"#639922",stable:"#888",decline:"#D85A30"};
+          tip2.innerHTML=`
+            <div style="font-weight:500;color:var(--color-text-primary);margin-bottom:4px;">${d.node.replace(/_/g," ")}</div>
+            <div style="color:${catCol[d.cat]||"#888"};font-size:11px;margin-bottom:6px;">${d.cat.replace("_"," ")}</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px 12px;font-size:11px;color:var(--color-text-secondary);">
+              <span>Pre-COVID</span><span style="color:var(--color-text-primary);font-weight:500;">${(d.pre*100).toFixed(0)}%</span>
+              <span>Post-COVID</span><span style="color:var(--color-text-primary);font-weight:500;">${(d.post*100).toFixed(0)}%</span>
+              <span>post_vs_pre</span><span style="color:${statusCol[d.status]};font-weight:500;">${d.pvp>=0?"+":""}${(d.pvp*100).toFixed(0)}%p</span>
+              <span>문헌 수</span><span style="color:var(--color-text-primary);font-weight:500;">${d.freq}편</span>
+              <span>갭 상태</span><span style="color:${statusCol[d.status]};font-weight:500;">${statusLbl[d.status]}</span>
+            </div>`;
+          tip2.style.display="block";
+          tip2.style.left=(tt.caretX+window.scrollX+12)+"px";
+          tip2.style.top=(tt.caretY+window.scrollY-20)+"px";
+        }
+      }
+    }
+  },
+  plugins:[diagPlugin,labelPlugin]
+});
+
+const catCols=Object.entries(catCol);
+document.getElementById("legend2").innerHTML=
+  catCols.map(([cat,c])=>`<span style="display:flex;align-items:center;gap:4px;"><span style="width:10px;height:10px;border-radius:2px;background:${c};display:inline-block;"></span><span>${cat.replace("_"," ")}</span></span>`).join("")+
+  `<span style="display:flex;align-items:center;gap:4px;margin-left:8px;border-left:0.5px solid var(--color-border-tertiary);padding-left:8px;"><span style="font-size:12px;">▲</span><span>신규</span></span>
+   <span style="display:flex;align-items:center;gap:4px;"><span style="font-size:12px;">▼</span><span>쇠퇴/안정</span></span>`;
+</script>

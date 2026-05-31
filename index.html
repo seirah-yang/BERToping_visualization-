@@ -170,26 +170,25 @@ NODES.forEach(n => {
   }
 });
 
-function makeEdge(src, tgt, w, isCovid) {
-  const sM = nodeMap[src], tM = nodeMap[tgt];
-  if (!sM || !tM) return null;
-  const p1 = sM.position, p2 = tM.position;
-  const pts = [p1, p2];
-  const geo = new THREE.BufferGeometry().setFromPoints(pts);
-  const col = isCovid ? 0x5DCAA5 : 0x888780;
-  const mat = new THREE.LineBasicMaterial({color:col, transparent:true, opacity: isCovid ? 0.7 : 0.35, linewidth:1});
-  const line = new THREE.Line(geo, mat);
-  line.userData = {src, tgt, w, isCovid};
-  scene.add(line);
-  return line;
+panel.style.display = "block";
 }
+
+let currentFilter = "all";
 
 EDGES.forEach(e => {
   const isCovid = e.firstYear >= 2020;
-  const line = makeEdge(e.s, e.t, e.w, isCovid, e.firstYear, e.lastYear);
+  const line = makeEdge(
+    e.s,
+    e.t,
+    e.w,
+    isCovid,
+    e.firstYear,
+    e.lastYear
+  );
+
   if (line) edgeMeshes.push(line);
 });
-
+  
 let isDragging = false, prevMouse = {x:0, y:0};
 let rotX = 0, rotY = 0;
 const pivot = new THREE.Group();
@@ -276,7 +275,6 @@ function showInfoPanel(n) {
   panel.style.display = "block";
 }
 
-"margin-top:10px"
   
 let currentFilter = "all";
 function setFilter(f) {
@@ -299,16 +297,8 @@ function setFilter(f) {
   });
 }
 
-Edge Weight: 3
-Co-occurrence: 3 studies
-First observed: 2023
-Last observed: 2025
-  
-<div class="sub" style="margin-top:10px">
-  Edge thickness reflects the number of publications in which two concepts co-occurred.
-  Thicker connections indicate more persistent conceptual coupling in RBQM literature.
-</div>
 let t = 0;
+
 function animate() {
   requestAnimationFrame(animate);
   t += 0.012;

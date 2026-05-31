@@ -7,11 +7,11 @@
   <div id="tip" style="position:absolute;display:none;pointer-events:none;background:rgba(10,14,26,0.92);border:0.5px solid rgba(255,255,255,0.18);border-radius:8px;padding:10px 14px;font-size:12px;color:#e2e8f0;max-width:210px;z-index:10;line-height:1.55;"></div>
 
   <div style="position:absolute;top:12px;left:14px;display:flex;gap:6px;flex-wrap:wrap;">
-    <button id="btn-all" onclick="setFilter('all')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.15);color:#e2e8f0;cursor:pointer;">전체</button>
-    <button id="btn-new" onclick="setFilter('new')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #1D9E75;background:rgba(29,158,117,0.2);color:#5DCAA5;cursor:pointer;">신규 등장</button>
-    <button id="btn-rise" onclick="setFilter('rise')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #EF9F27;background:rgba(239,159,39,0.15);color:#FAC775;cursor:pointer;">Post-COVID 성장</button>
-    <button id="btn-dec" onclick="setFilter('dec')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #D85A30;background:rgba(216,90,48,0.15);color:#F0997B;cursor:pointer;">쇠퇴</button>
-    <button id="btn-pre" onclick="setFilter('pre')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.08);color:#9ca3af;cursor:pointer;">Pre-COVID 엣지</button>
+    <button id="btn-all" onclick="setFilter('all')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.15);color:#e2e8f0;cursor:pointer;">All</button>
+    <button id="btn-new" onclick="setFilter('new')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #1D9E75;background:rgba(29,158,117,0.2);color:#5DCAA5;cursor:pointer;">New after COVID</button>
+    <button id="btn-rise" onclick="setFilter('rise')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #EF9F27;background:rgba(239,159,39,0.15);color:#FAC775;cursor:pointer;">Post-COVID Rise</button>
+    <button id="btn-dec" onclick="setFilter('dec')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid #D85A30;background:rgba(216,90,48,0.15);color:#F0997B;cursor:pointer;">Decline</button>
+    <button id="btn-pre" onclick="setFilter('pre')" style="font-size:11px;padding:4px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.08);color:#9ca3af;cursor:pointer;">Pre-COVID Edge</button>
   </div>
 
   <div style="position:absolute;bottom:12px;left:14px;font-size:10px;color:rgba(255,255,255,0.4);line-height:1.7;">
@@ -19,10 +19,10 @@
   </div>
 
   <div style="position:absolute;bottom:12px;right:14px;display:flex;flex-direction:column;gap:4px;font-size:10px;color:rgba(255,255,255,0.55);">
-    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1D9E75;margin-right:5px;vertical-align:middle;"></span>신규 등장</span>
-    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#EF9F27;margin-right:5px;vertical-align:middle;"></span>Post-COVID 성장</span>
-    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#D85A30;margin-right:5px;vertical-align:middle;"></span>쇠퇴</span>
-    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#888;margin-right:5px;vertical-align:middle;"></span>안정</span>
+    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#1D9E75;margin-right:5px;vertical-align:middle;"></span>New after COVID</span>
+    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#EF9F27;margin-right:5px;vertical-align:middle;"></span>Post-COVID Rise</span>
+    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#D85A30;margin-right:5px;vertical-align:middle;"></span>Decline</span>
+    <span><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#888;margin-right:5px;vertical-align:middle;"></span>Stable</span>
   </div>
 </div>
 
@@ -254,7 +254,7 @@ function handleClick(e) {
 function showInfoPanel(n) {
   const panel = document.getElementById("info-panel");
   document.getElementById("info-title").textContent = n.label.toUpperCase();
-  const statusLabel = n.isNew ? "신규 등장 (Post-COVID)" : n.delta > 0.08 ? "Post-COVID 성장" : n.delta < -0.2 ? "쇠퇴 (Gap 영역)" : "안정";
+  const statusLabel = n.isNew ? "Rise (Post-COVID)" : n.delta > 0.08 ? "Post-COVID Rise" : n.delta < -0.2 ? "Decline (Gap 영역)" : "Stable";
   const statusCol = n.isNew ? "#1D9E75" : n.delta > 0.08 ? "#EF9F27" : n.delta < -0.2 ? "#D85A30" : "#888";
   document.getElementById("info-body").innerHTML = `
     <span style="color:var(--color-text-secondary);">카테고리</span><span>${n.cat.replace(/_/g,' ')}</span>
@@ -267,7 +267,11 @@ function showInfoPanel(n) {
     <span style="color:var(--color-text-secondary);">갭 상태</span><span style="color:${statusCol};">${statusLabel}</span>`;
   panel.style.display = "block";
 }
-
+<div class="sub" style="margin-top:10px">
+  Edge thickness reflects the number of publications in which two concepts co-occurred.
+  Thicker connections indicate more persistent conceptual coupling in RBQM literature.
+</div>
+  
 let currentFilter = "all";
 function setFilter(f) {
   currentFilter = f;
@@ -289,6 +293,15 @@ function setFilter(f) {
   });
 }
 
+Edge Weight: 3
+Co-occurrence: 3 studies
+First observed: 2023
+Last observed: 2025
+  
+<div class="sub" style="margin-top:10px">
+  Edge thickness reflects the number of publications in which two concepts co-occurred.
+  Thicker connections indicate more persistent conceptual coupling in RBQM literature.
+</div>
 let t = 0;
 function animate() {
   requestAnimationFrame(animate);

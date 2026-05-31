@@ -124,11 +124,46 @@ function nodeColor(n) {
   return catColor[n.cat] || "#888780";
 }
 
+
+  function makeEdge(src, tgt, w, isCovid, firstYear, lastYear) {
+  const sM = nodeMap[src];
+  const tM = nodeMap[tgt];
+
+  if (!sM || !tM) return null;
+
+  const geo = new THREE.BufferGeometry().setFromPoints([
+    sM.position,
+    tM.position
+  ]);
+
+  const col = isCovid ? 0x5DCAA5 : 0x888780;
+
+  const mat = new THREE.LineBasicMaterial({
+    color: col,
+    transparent: true,
+    opacity: isCovid ? 0.7 : 0.35
+  });
+
+  const line = new THREE.Line(geo, mat);
+
+  line.userData = {
+    src,
+    tgt,
+    w,
+    isCovid,
+    firstYear,
+    lastYear
+  };
+
+  scene.add(line);
+  return line;
+}
 const canvas = document.getElementById("c3d");
 const wrap = document.getElementById("canvas-wrap");
 let W = wrap.clientWidth, H = wrap.clientHeight;
-canvas.width = W; canvas.height = H;
-
+canvas.width = W;
+canvas.height = H;
+  
 const renderer = new THREE.WebGLRenderer({canvas, antialias:true, alpha:false});
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.setSize(W, H);
@@ -170,10 +205,8 @@ NODES.forEach(n => {
   }
 });
 
-panel.style.display = "block";
-}
 
-let currentFilter = "all";
+let isDragging = false, prevMouse = {x:0, y:0};
 
 EDGES.forEach(e => {
   const isCovid = e.firstYear >= 2020;
@@ -208,6 +241,7 @@ canvas.addEventListener("mousemove", e => {
     handleHover(e);
   }
 });
+  
 canvas.addEventListener("wheel", e => { cam.position.z = Math.max(4, Math.min(30, cam.position.z + e.deltaY * 0.02)); });
 canvas.addEventListener("click", e => handleClick(e));
 
@@ -261,7 +295,7 @@ function handleClick(e) {
 function showInfoPanel(n) {
   const panel = document.getElementById("info-panel");
   document.getElementById("info-title").textContent = n.label.toUpperCase();
-  const statusLabel = n.isNew ? "Rise (Post-COVID)" : n.delta > 0.08 ? "Post-COVID Rise" : n.delta < -0.2 ? "Decline (Gap 영역)" : "Stable";
+  const statusLabel = n.isNew ? "New (Post-COVID)" : n.delta > 0.08 ? "Post-COVID Rise" : n.delta < -0.2 ? "Decline (Gap 영역)" : "Stable";
   const statusCol = n.isNew ? "#1D9E75" : n.delta > 0.08 ? "#EF9F27" : n.delta < -0.2 ? "#D85A30" : "#888";
   document.getElementById("info-body").innerHTML = `
     <span style="color:var(--color-text-secondary);">카테고리</span><span>${n.cat.replace(/_/g,' ')}</span>
